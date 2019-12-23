@@ -6,6 +6,10 @@ module.exports = {
     client: 'pg',
     connection: 'postgres://localhost/basebook'
   },
+  production: {
+    client: 'pg',
+    connection: 'process.env.DATABASE_URL'
+  }
 
 };
 
